@@ -189,6 +189,10 @@ export class ShapeStream<T extends Row<unknown> = Row>
     return this.#shapeId
   }
 
+  get offset() {
+    return this.#lastOffset
+  }
+
   get isUpToDate() {
     return this.#isUpToDate
   }
